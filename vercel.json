@@ -3,7 +3,7 @@
     "builds": [
         {
             "src": "app.js",
-            "use": "@vercel/home"
+            "use": "@vercel/node"
         }
     ],
     "routes": [
