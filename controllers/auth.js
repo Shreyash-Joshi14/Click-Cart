@@ -1,7 +1,7 @@
 const User = require("../models/user");
 const bcrypt = require("bcryptjs");
 const { validationResult } = require("express-validator");
-require("dotenv").config();
+// require("dotenv").config();
 
 const crypto = require("crypto");
 
@@ -11,7 +11,7 @@ const Mailgun = require("mailgun.js");
 const mailgun = new Mailgun(formData);
 const mg = mailgun.client({
   username: "api",
-  key: process.env.MAILGUN_KEY,
+  key: process.env.MAILGUN_KEY || "0",
 });
 
 exports.getLogin = (req, res, next) => {

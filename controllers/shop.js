@@ -1,6 +1,6 @@
 const fs = require("fs");
 const path = require("path");
-require("dotenv").config();
+// require("dotenv").config();
 
 const stripe = require("stripe")(process.env.STRIPE_KEY);
 

@@ -2,3 +2,4 @@
 .env
 server.cert
 server.key
+nodemon.json
